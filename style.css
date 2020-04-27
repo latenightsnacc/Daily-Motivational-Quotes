@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  outline: none;
+}
+
+body {
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(whitesmoke));
+  background-image: linear-gradient(skyblue, whitesmoke);
+  background-repeat: no-repeat;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.circle-box {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+#sun {
+  background-color: #fcfc48;
+  -webkit-box-shadow: 3px 3px 20px 12px #fcfc48;
+          box-shadow: 3px 3px 20px 12px #fcfc48;
+}
+
+#moon {
+  background-color: #ecebd3;
+  -webkit-box-shadow: 3px 3px 20px 12px #ecebd3;
+          box-shadow: 3px 3px 20px 12px #ecebd3;
+  display: none;
+}
+
+#greeting {
+  color: lightseagreen;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 50px;
+}
+
+.cards {
+  display: none;
+}
+
+.card {
+  border: solid 2px yellow;
+  background-color: snow;
+}
+
+.card .card-body {
+  font-family: 'Caveat', cursive;
+  font-size: 23px;
+  text-align: center;
+}
+
+.card .card-body .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=style.css.map */
