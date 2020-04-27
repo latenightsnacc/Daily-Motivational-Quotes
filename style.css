@@ -10,8 +10,8 @@
 
 body {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(skyblue), to(whitesmoke));
-  background-image: linear-gradient(skyblue, whitesmoke);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#0db2f3), to(whitesmoke));
+  background-image: linear-gradient(#0db2f3, whitesmoke);
   background-repeat: no-repeat;
 }
 
@@ -48,7 +48,8 @@ body {
   font-size: 50px;
 }
 
-.cards {
+.cards #quote0, .cards #quote1, .cards #quote2, .cards #quote3, .cards #quote4, .cards #quote5, .cards #quote6, .cards #quote7, .cards #quote8, .cards #quote9, .cards #quote10,
+.cards #quote11, .cards #quote12, .cards #quote13, .cards #quote14, .cards #quote15, .cards #quote16, .cards #quote17, .cards #quote18, .cards #quote19, .cards #quote20 {
   display: none;
 }
 
@@ -70,5 +71,32 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.btn {
+  border: 2px solid #0bbaf5;
+  color: #0bbaf5;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: #0bbaf5;
+  color: snow;
+}
+
+.form-row {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.form-row input[type="text"] {
+  min-width: 350px;
+  border: 2px solid white;
+  padding-left: 10px;
 }
 /*# sourceMappingURL=style.css.map */

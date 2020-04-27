@@ -12,7 +12,8 @@ body{
     //background-color: skyblue;
     //background: url("smoke.jpeg");
     //background-size: cover;
-    background-image: linear-gradient(skyblue, whitesmoke);
+    //background-image: linear-gradient(skyblue, whitesmoke);
+    background-image: linear-gradient(rgb(13, 178, 243), whitesmoke);
     background-repeat: no-repeat;
     
 }
@@ -29,6 +30,7 @@ body{
     //background-color: rgb(250, 196, 71);
     background-color: rgb(252, 252, 72);
     box-shadow: 3px 3px 20px 12px rgb(252, 252, 72);
+    // background-image: radial-gradient(rgb(236, 204, 22), rgb(252, 252, 72));
 }
 #moon{
     background-color: rgb(236, 235, 211);
@@ -42,7 +44,10 @@ body{
     font-size: 50px;
 }
 .cards{
-     display: none;
+    #quote0, #quote1, #quote2, #quote3, #quote4, #quote5, #quote6, #quote7, #quote8, #quote9, #quote10,
+    #quote11, #quote12, #quote13, #quote14, #quote15, #quote16, #quote17, #quote18, #quote19, #quote20{
+        display: none;
+    }
  }
 .card{
     border: solid 2px yellow;
@@ -59,5 +64,24 @@ body{
             display: flex;
             justify-content: center;
         }
+    }
+}
+.btn {
+    border: 2px solid rgb(11, 186, 245);
+    color: rgb(11, 186, 245);
+    font-weight: bold;
+    &:hover{
+        background-color: rgb(11, 186, 245);
+        color: snow;
+    }
+}
+.form-row{
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+    input[type="text"]{
+        min-width: 350px;
+        border: 2px solid white;
+        padding-left: 10px;
     }
 }

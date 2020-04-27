@@ -18,15 +18,19 @@
             <h1 id="greeting" class="text-center py-3">Hello!</h1>
         </div>
         <div class="container">
-            <div class="row">
-                <div class="form-group col-6 py-3 mx-auto">
-                    <input id="username" class="form-control" placeholder="Enter your name">
+            <form>
+                <div class="form-row">
+                    <input id="username" placeholder="Enter your name" type="text">
+                    <input type="button" id="submit" class="btn mx-2" value="Enter">
                 </div>
-            </div>  
+            </form>
+        </div>
+        <div class="container text-center">
+            <button class="btn my-3" id="get-quote">Quote of the day!</button>
         </div>
         <div class="container" id="quotes">
             <div class="cards">
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote0">
                     <div class="card-body">
                         "Things work out best for those who make the best of how things work out." 
                         <div class="left">
@@ -34,7 +38,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote1">
                     <div class="card-body">
                         "If you are not willing to risk the usual you will have to settle for the ordinary."  
                         <div class="left">
@@ -42,7 +46,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote2">
                     <div class="card-body">
                         "All our dreams can come true if we have the courage to pursue them."  
                         <div class="left">
@@ -50,7 +54,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote3">
                     <div class="card-body">
                         "Success is walking from failure to failure with no loss of enthusiasm."  
                         <div class="left">
@@ -58,7 +62,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote4">
                     <div class="card-body">
                         "Opportunities don't happen, you create them."   
                         <div class="left">
@@ -66,7 +70,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote5">
                     <div class="card-body">
                         "Try not to become a person of success, but rather try to become a person of value." 
                         <div class="left">
@@ -74,7 +78,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote6">
                     <div class="card-body">
                         "Great minds discuss ideas; average minds discuss events; small minds discuss people." 
                         <div class="left">
@@ -82,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote7">
                     <div class="card-body">
                         "If you don't value your time, neither will others. Stop giving away your time and talents--start charging for it."   
                         <div class="left">
@@ -90,7 +94,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote8">
                     <div class="card-body">
                         "What seems to us as bitter trials are often blessings in disguise."   
                         <div class="left">
@@ -98,42 +102,42 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote9">
                     <div class="card-body">
                         "The distance between insanity and genius is measured only by success."                         <div class="left">
                             <span>--Bruce Feirstein</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote10">
                     <div class="card-body">
                         "If you can't explain it simply, you don't understand it well enough."                        <div class="left">
                             <span> --Albert Einstein</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote11">
                     <div class="card-body">
                         "Life is not about finding yourself. Life is about creating yourself."                         <div class="left">
                             <span>--Lolly Daskal</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote12">
                     <div class="card-body">
                         "Nothing in the world is more common than unsuccessful people with talent."                         <div class="left">
                             <span>--Anonymous</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote13">
                     <div class="card-body">
                         "Innovation distinguishes between a leader and a follower."                         <div class="left">
                             <span>--Steve Jobs</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote14">
                     <div class="card-body">
                         "I find that the harder I work, the more luck I seem to have."
                         <div class="left">
@@ -141,14 +145,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote15">
                     <div class="card-body">
                         "Courage is resistance to fear, mastery of fear--not absence of fear."                        <div class="left">
                             <span>--Mark Twain</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote16">
                     <div class="card-body">
                         "Only put off until tomorrow what you are willing to die having left undone." 
                         <div class="left">
@@ -156,28 +160,28 @@
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote17">
                     <div class="card-body">
                         "The only place where success comes before work is in the dictionary."                         <div class="left">
                             <span>--Vidal Sassoon</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote18">
                     <div class="card-body">
                         "It's not what you look at that matters, it's what you see."                         <div class="left">
                             <span>--Anonymous</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote19">
                     <div class="card-body">
                         "Success is liking yourself, liking what you do, and liking how you do it."                         <div class="left">
                             <span>--Maya Angelou</span>
                         </div>
                     </div>
                 </div>
-                <div class="card w-75 mx-auto my-4">
+                <div class="card w-75 mx-auto my-4" id="quote20">
                     <div class="card-body">
                         "A real entrepreneur is somebody who has no safety net underneath them."                         <div class="left">
                             <span>--Henry Kravis</span>
