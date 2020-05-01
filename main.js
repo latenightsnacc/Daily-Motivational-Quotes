@@ -6,7 +6,7 @@ let quote = document.getElementById('get-quote');
 let sun = document.getElementById('sun');
 let moon = document.getElementById('moon');
 let card = document.getElementsByClassName('.card');
-let pgBody = document.getElementById('body');
+
 //   Cards
 let q0 = document.getElementById('quote0');
 let q1 = document.getElementById('quote1');
@@ -160,7 +160,7 @@ function getQuote(e){
 }
 
 //   This function takes the username inputted in the form
-//   And greets the user
+//   And greets the user based on the time of the day.
 function greetUser(e){
     if(user.value === '' || user.value == null){
         alert("Please enter your name"); 
@@ -184,11 +184,16 @@ function greetUser(e){
         greet.textContent = "Good night, " +uN+ "!";
         sun.style.display = 'none';
         moon.style.display = 'block';
-        pgBody.style.backgroundColor = "red";
-        //document.body.style.backgroundColor = 'black';
-        // card.style.border = 'solid 2px rgb(24, 188, 243)';
-        // card.style.backgroundColor = 'black';
-        // card.style.color = 'rgb(24, 188, 243)';
+        
+        // This section is not working as it should.
+        // The background color is to change to black.
+        document.body.style.backgroundColor = 'black';
+        // The card border is to change to a specific shade of blue;
+        card.style.border = 'solid 2px rgb(24, 188, 243)';
+         // The card background color is to change to black;
+        card.style.backgroundColor = 'black';
+         // The card text color is to change to a specific shade of blue;
+        card.style.color = 'rgb(24, 188, 243)';
 
 
     } else {
