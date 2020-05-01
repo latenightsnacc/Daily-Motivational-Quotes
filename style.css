@@ -15,6 +15,16 @@ body {
   background-repeat: no-repeat;
 }
 
+.dark-wrapper {
+  background-color: black;
+}
+
+.dark-wrapper .card {
+  border: solid 2px #18bcf3;
+  background-color: black;
+  color: #18bcf3;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;

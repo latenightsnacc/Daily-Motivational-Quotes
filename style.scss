@@ -9,13 +9,17 @@
 body{
     height: 100vh;
     //background-color: black;
-    //background-color: skyblue;
-    //background: url("smoke.jpeg");
-    //background-size: cover;
-    //background-image: linear-gradient(skyblue, whitesmoke);
     background-image: linear-gradient(rgb(13, 178, 243), whitesmoke);
     background-repeat: no-repeat;
     
+}
+.dark-wrapper {
+    background-color: black;
+    .card{
+        border:  solid 2px rgb(24, 188, 243);
+        background-color: black;
+        color: rgb(24, 188, 243);
+    }
 }
 .flex {
     display: flex;

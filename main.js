@@ -5,8 +5,8 @@ let quotes = document.getElementById('quotes');
 let quote = document.getElementById('get-quote');
 let sun = document.getElementById('sun');
 let moon = document.getElementById('moon');
-let card = document.querySelector('.class');
-
+let card = document.getElementsByClassName('.card');
+let pgBody = document.getElementById('body');
 //   Cards
 let q0 = document.getElementById('quote0');
 let q1 = document.getElementById('quote1');
@@ -178,16 +178,17 @@ function greetUser(e){
         let uN = user.value;
         greet.textContent = "Good evening, " +uN+ "!";
         sun.style.backgroundColor = "orange";
-    } else if(timeHours > 18){
-        console.log(timeHours);
+    } else if(timeHours >= 18){
+        console.log("Time: " +timeHours);
         let uN = user.value;
         greet.textContent = "Good night, " +uN+ "!";
         sun.style.display = 'none';
         moon.style.display = 'block';
-        document.body.backgroundColor = 'black';
-        card.style.border = 'solid 2px rgb(24, 188, 243)';
-        card.style.backgroundColor = 'black';
-        card.style.color = 'rgb(24, 188, 243)';
+        pgBody.style.backgroundColor = "red";
+        //document.body.style.backgroundColor = 'black';
+        // card.style.border = 'solid 2px rgb(24, 188, 243)';
+        // card.style.backgroundColor = 'black';
+        // card.style.color = 'rgb(24, 188, 243)';
 
 
     } else {
